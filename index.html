@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Linha do Tempo MCU</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Linha do Tempo <span>MCU</span></h1>
+  <div class="progress" aria-label="Progresso">
+    <div class="bar"><div id="fill"></div></div>
+    <p id="count"></p>
+  </div>
+</header>
+<section class="controls">
+  <label>Ordem
+    <select id="order">
+      <option value="cron">Cronológica (história)</option>
+      <option value="lanc">Lançamento</option>
+    </select>
+  </label>
+  <label>Mostrar
+    <select id="status">
+      <option value="all">Todos</option>
+      <option value="todo">Não assistidos</option>
+      <option value="done">Assistidos</option>
+    </select>
+  </label>
+  <label>Tipo
+    <select id="type">
+      <option value="all">Todos</option>
+      <option value="filme">Filmes</option>
+      <option value="serie">Séries</option>
+      <option value="especial">Especiais</option>
+    </select>
+  </label>
+  <label>Fase
+    <select id="phase"><option value="all">Todas</option></select>
+  </label>
+  <input id="search" type="search" placeholder="Buscar título…">
+  <button id="reset" type="button">Limpar tudo</button>
+</section>
+<main><ol id="list"></ol></main>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
