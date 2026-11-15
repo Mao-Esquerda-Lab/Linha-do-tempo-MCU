@@ -15,6 +15,10 @@
   </div>
 </header>
 <section class="controls">
+  <div class="views" role="group" aria-label="Visualização">
+    <button type="button" data-view="list" class="on">Lista</button>
+    <button type="button" data-view="line">Linha do tempo</button>
+  </div>
   <label>Ordem
     <select id="order">
       <option value="cron">Cronológica (história)</option>
@@ -43,6 +47,7 @@
   <button id="reset" type="button">Limpar tudo</button>
 </section>
 <main><ol id="list"></ol></main>
+<div id="timeline" class="timeline" hidden></div>
 <footer>Este produto usa a API do TMDB, mas não é endossado nem certificado pelo TMDB. Imagens © TMDB / Marvel Studios.</footer>
 <script src="data.js"></script>
 <script src="app.js"></script>
