@@ -25,3 +25,6 @@ input:focus-visible+.check{outline:2px solid var(--red);outline-offset:2px}
 .info{display:flex;flex-direction:column}small{color:var(--mut)}
 .tag{font-style:normal;font-weight:600}.tag.filme{color:#f5a524}.tag.serie{color:#5aa9ff}.tag.especial{color:#c084fc}
 .empty{text-align:center;color:var(--mut);padding:24px}
+.poster{flex:none;width:48px;height:72px;border-radius:4px;object-fit:cover;background:var(--line)}
+.item.done .poster{filter:grayscale(1)}
+footer{max-width:760px;margin:0 auto;padding:0 16px 32px;color:var(--mut);font-size:.8rem}

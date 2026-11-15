@@ -33,6 +33,7 @@
         <label>
           <input type="checkbox" ${done ? "checked" : ""}>
           <span class="check"></span>
+          ${i.poster ? `<img class="poster" loading="lazy" alt="" src="https://image.tmdb.org/t/p/w154${i.poster}">` : '<span class="poster ph"></span>'}
           <span class="info">
             <strong></strong>
             <small>${order === "cron" ? i.ano : "Lançado em " + i.lancamento}
